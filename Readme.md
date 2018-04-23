@@ -1,0 +1,11 @@
+# How to make a Lookup editor function as a regular ComboBox
+
+
+<p>Starting with version <strong>16.1</strong> we support the <a href="https://documentation.devexpress.com/WindowsForms/116019/Controls-and-Libraries/Editors-and-Simple-Controls/Lookup-Editors/Combobox-Mode-Allow-Entering-New-Values">Combobox Mode</a> for lookup editors such as <strong>LookUpEdit</strong> and <strong>GridLookUpEdit</strong> out of the box. <br><br><strong>For older versions:</strong></p>
+<p><br>A Lookup editor is a kind of editors that can only display those values that are present in its dropdown list. Such editor can't display any value in its edit box. When a user types a value in the Lookup editor edit box, the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraEditorsLookUpEditBase_ProcessNewValuetopic">ProcessNewValue</a> fires. This event allows you to handle this situation and add the typed value to the editor's datasource. In this case, this value won't dissappear when the editor is validated.</p>
+<p>However, if you need to have a fixed dropdown list and don't want to change the editor's datasource, this solution is not suitable for you. To overcome this problem, it's necessary to create a custom datasource wrapper. This wrapper will store the last typed value, and that's why the Lookup editor will show this value without any problem. However, this change won't affect a wrapped datasource.</p>
+<p>This example is based on the <a href="https://www.devexpress.com/Support/Center/p/E1180">How to create a data source wrapper that adds an empty item to the lookup list</a> example. The only requirement is that your datasource should implement the ITypedList interface. You see that you can modify your original datasource values, and these changes will be automatically displayed in the GridLookUpEdit's datasource. However, changes made within the ProcessNewEvent event handler won't affect your original datasource.</p>
+
+<br/>
+
+
