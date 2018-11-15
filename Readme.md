@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+* [MyDataSourceWrapper.cs](./CS/MyDataSourceWrapper/MyDataSourceWrapper.cs) (VB: [MyDataSourceWrapper.vb](./VB/MyDataSourceWrapper/MyDataSourceWrapper.vb))
+* [MyGridLookupDataSourceHelper.cs](./CS/MyDataSourceWrapper/MyGridLookupDataSourceHelper.cs) (VB: [MyGridLookupDataSourceHelper.vb](./VB/MyDataSourceWrapper/MyGridLookupDataSourceHelper.vb))
+* [MyObject.cs](./CS/MyDataSourceWrapper/MyObject.cs) (VB: [MyObject.vb](./VB/MyDataSourceWrapper/MyObject.vb))
+* [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
+<!-- default file list end -->
 # How to make a Lookup editor function as a regular ComboBox
 
 
